@@ -4,3 +4,4 @@ python-vlc==3.0.18121
 pytz==2022.7.1
 starlette==0.25.0
 uvicorn==0.20.0
+python-dotenv==0.21.1
