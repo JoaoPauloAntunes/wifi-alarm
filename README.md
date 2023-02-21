@@ -5,5 +5,5 @@
 - [ ] Install it on smartphone
     - [x] test: install it on "Smartphone Novo"   
     - [x] test: install it on "Smartphone Velho"   
-- [ ] Call the endpoint from another device in the same network
+- [x] Call the endpoint from another device in the same network
 - [ ] ...
