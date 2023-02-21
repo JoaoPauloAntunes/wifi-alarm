@@ -4,6 +4,6 @@
 - [x] Create a service to do it, just call the POST /alarm endpoint
 - [ ] Install it on smartphone
     - [x] test: install it on "Smartphone Novo"   
-    - [ ] test: install it on "Smartphone Velho"   
+    - [x] test: install it on "Smartphone Velho"   
 - [ ] Call the endpoint from another device in the same network
 - [ ] ...
