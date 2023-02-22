@@ -102,9 +102,5 @@ def play_alarm():
         # playsound(alarm_file_path, True)
         # webbrowser.open(alarm_file_path)
         # os.system(f"start {alarm_file_path}")
-
-        from pydub import AudioSegment
-        from pydub.playback import play
-        song = AudioSegment.from_mp3(alarm_file_path)
-        play(song)
+        print("NONE~~~~")
     return True
