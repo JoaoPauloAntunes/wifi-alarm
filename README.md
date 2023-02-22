@@ -33,7 +33,7 @@ Get the IP address of this device:
 ```bash
 ifconfig
 ```
-something like: 192.168.1.x
+Something like: 192.168.1.x
 
 Configure the environments:
 ```bash
