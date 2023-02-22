@@ -40,11 +40,6 @@ Configure the environments:
 cp sample.env .env
 nano .env
 ```
-Content:
-```
-HOST_IP_ADDRESS = "192.168.1.x"
-```
-Change "x" with the correct suffix.
 
 Then, run the API:
 ```bash
