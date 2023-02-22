@@ -2,6 +2,7 @@ import uvicorn
 from dotenv import load_dotenv
 import os
 
+from utils import load_bool_env
 
 load_dotenv(".env")
 
@@ -14,5 +15,5 @@ if __name__ == "__main__":
         host=os.environ["HOST_IP_ADDRESS"], 
         port=8000, 
         log_level="info", 
-        reload=os.getenv("APP_RELOAD", 'False').lower() in ('true', '1', 't')
+        reload=load_bool_env("APP_RELOAD"),
     )

@@ -8,9 +8,17 @@ from fastapi.responses import JSONResponse
 from fastapi.routing import APIRoute
 from starlette.exceptions import ExceptionMiddleware
 from starlette.exceptions import HTTPException as StarletteHTTPException
-import vlc
+from dotenv import load_dotenv
 
 import utils
+
+
+load_dotenv(".env")
+if utils.load_bool_env("USE_VLC"):
+    import vlc
+else:
+    from playsound import playsound
+
 
 
 class LoggerRouteHandler(APIRoute):
@@ -86,5 +94,9 @@ def read_root(request: Request):
 
 @app.post("/alarm")
 def play_alarm():
-    vlc.MediaPlayer("./src/assets/ring_sound.mp3").play()
+    alarm_file_path = "./src/assets/ring_sound.mp3"
+    if utils.load_bool_env("USE_VLC"):
+        vlc.MediaPlayer(alarm_file_path).play()
+    else:
+        playsound(alarm_file_path, True)
     return True
