@@ -10,12 +10,12 @@
 
 # Make it yourself
 
-## Install Termux in your smartphone.
+## Install Termux in your smartphone
 
 - [Termux](https://github.com/termux/termux-app)
 - [Termux on android 5 or 6](https://github.com/termux/termux-app/wiki/Termux-on-android-5-or-6)
 
-## Configure your Termux:
+## Configure your Termux
 
 ```bash
 pkg upgrade
