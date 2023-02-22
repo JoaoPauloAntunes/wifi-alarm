@@ -7,3 +7,20 @@
     - [ ] test: install it on "Smartphone Velho"   
 - [x] Call the endpoint from another device in the same network
 - [ ] ...
+
+# Make it yourself
+
+- Install Termux in your smartphone.
+- Configure your Termux:
+```bash
+pkg upgrade
+pkg install python
+pkg install vlc
+pkg install git
+
+git clone https://github.com/JoaoPauloAntunes/wifi-alarm.git
+cd wifi-alarm
+pip install --upgrade pip
+pip install -r requirements.txt
+python src/run.py
+```
