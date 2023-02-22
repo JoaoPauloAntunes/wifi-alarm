@@ -33,17 +33,13 @@ Get the IP address of this device:
 ```bash
 ifconfig
 ```
-something like: 192.168.1.x
+Something like: 192.168.1.x
 
 Configure the environments:
 ```bash
+cp sample.env .env
 nano .env
 ```
-Content:
-```
-HOST_IP_ADDRESS = "192.168.1.x"
-```
-Change "x" with the correct suffix.
 
 Then, run the API:
 ```bash
