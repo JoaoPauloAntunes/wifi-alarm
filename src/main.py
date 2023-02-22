@@ -16,10 +16,8 @@ import utils
 load_dotenv(".env")
 if utils.load_bool_env("USE_VLC"):
     import vlc
-else:
-    # from playsound import playsound
-    ...
-
+elif utils.load_bool_env("USE_MPV_MODULE"):
+    import mpv
 
 
 class LoggerRouteHandler(APIRoute):
@@ -98,14 +96,10 @@ def play_alarm():
     alarm_file_path = "./src/assets/ring_sound.mp3"
     if utils.load_bool_env("USE_VLC"):
         vlc.MediaPlayer(alarm_file_path).play()
+    elif utils.load_bool_env("USE_MPV_MODULE"):
+        player = mpv.MPV(ytdl=True)
+        player.play(alarm_file_path)
+        player.wait_for_playback()
     else:
-        # playsound(alarm_file_path, True)
-        # webbrowser.open(alarm_file_path)
-        # os.system(f"start {alarm_file_path}")
-        print("NONE~~~~")
-        # import mpv
-        # player = mpv.MPV(ytdl=True)
-        # player.play(alarm_file_path)
-        # player.wait_for_playback()
         os.system(f"mpv {alarm_file_path}")
     return True
