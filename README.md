@@ -37,6 +37,7 @@ something like: 192.168.1.x
 
 Configure the environments:
 ```bash
+cp sample.env .env
 nano .env
 ```
 Content:
