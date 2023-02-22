@@ -103,4 +103,8 @@ def play_alarm():
         # webbrowser.open(alarm_file_path)
         # os.system(f"start {alarm_file_path}")
         print("NONE~~~~")
+        import mpv
+        player = mpv.MPV(ytdl=True)
+        player.play(alarm_file_path)
+        player.wait_for_playback()
     return True
