@@ -17,7 +17,8 @@ load_dotenv(".env")
 if utils.load_bool_env("USE_VLC"):
     import vlc
 else:
-    from playsound import playsound
+    # from playsound import playsound
+    ...
 
 
 
@@ -98,5 +99,12 @@ def play_alarm():
     if utils.load_bool_env("USE_VLC"):
         vlc.MediaPlayer(alarm_file_path).play()
     else:
-        playsound(alarm_file_path, True)
+        # playsound(alarm_file_path, True)
+        # webbrowser.open(alarm_file_path)
+        # os.system(f"start {alarm_file_path}")
+
+        from pydub import AudioSegment
+        from pydub.playback import play
+        song = AudioSegment.from_mp3(alarm_file_path)
+        play(song)
     return True
