@@ -24,7 +24,7 @@ pkg install vlc
 pkg install git
 
 git clone https://github.com/JoaoPauloAntunes/wifi-alarm.git
-cd wifi-alarm
+cd wifi-alarm/api
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
