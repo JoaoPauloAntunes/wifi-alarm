@@ -29,7 +29,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Get the IP address of this device:   
+Get your device's IP address (internal network):
 ```bash
 ifconfig
 ```
