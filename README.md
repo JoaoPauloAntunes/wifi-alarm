@@ -79,3 +79,7 @@ cd wifi-alarm/esp32
 cp sample.config.py config.py
 nano config.py
 ```
+
+### Configure the ESP32 circuit
+
+<img align="right" src="https://raw.githubusercontent.com/JoaoPauloAntunes/wifi-alarm/1154f6df1a632d853e4f476016baef10a8e78162/esp32/docs/eletronic_circuit.pdf" width="300"/>
