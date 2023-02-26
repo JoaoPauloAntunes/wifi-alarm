@@ -77,5 +77,5 @@ You will need to copy the files from folder "esp32" to the ESP32 flash card. Bef
 cd ../..
 cd wifi-alarm/esp32
 cp sample.config.py config.py
-config.py
+nano config.py
 ```
