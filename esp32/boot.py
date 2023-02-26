@@ -1,10 +1,10 @@
-print("--boot.py")
-import os
+print(" ----------------------------------boot.py----------------------------------")
 import network
-import sys
-sys.path.append("src")
 
 import config
+
+if config.INSTALL_PACKAGES:
+    import upip
 
 
 def do_connect():
@@ -20,3 +20,7 @@ def do_connect():
 
 if config.TURN_ON_WIFI:
     do_connect()
+
+if config.INSTALL_PACKAGES:
+    upip.install("pystone_lowmem")
+    
