@@ -70,5 +70,6 @@ Use the esptool to flashing micropython firmware on ESP32
 esptool --chip esp32 --port <serial_port> write_flash -z 0x1000 <esp32-X.bin>
 ```
 
-Download the VSCode program; install Pymakr, a VScode pluggin; use them to program on the ESP32.
+Download the VSCode program and install Pymakr, a VScode pluggin; use them to program on the ESP32.
+
 You will need to copy the files from folder "esp32" to the ESP32 flash card.
