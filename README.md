@@ -72,4 +72,10 @@ esptool --chip esp32 --port <serial_port> write_flash -z 0x1000 <esp32-X.bin>
 
 Download the VSCode program and install Pymakr, a VScode pluggin; use them to program on the ESP32.
 
-You will need to copy the files from folder "esp32" to the ESP32 flash card.
+You will need to copy the files from folder "esp32" to the ESP32 flash card. Before do it, configure the environments:
+```bash
+cd ../..
+cd wifi-alarm/esp32
+cp sample.config.py config.py
+config.py
+```
