@@ -90,8 +90,7 @@ def read_root(request: Request):
     return res
 
 
-
-@app.post("/alarm")
+@app.post("/alarm", status_code=status.HTTP_204_NO_CONTENT)
 def play_alarm():
     alarm_file_path = "./src/assets/ring_sound.mp3"
     if utils.load_bool_env("USE_VLC"):
