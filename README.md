@@ -6,9 +6,10 @@
     - [x] test: install it on "Smartphone Novo"   
     - [x] test: install it on "Smartphone Velho"   
 - [x] Call the endpoint from another device in the same network
-- [ ] Make the API Client: ESP32 + button without retention
+- [x] Make the API Client: ESP32 + button without retention
     - [x] Make it with ESP32 internal button
-    - [ ] Make it with external button
+    - [x] Make it with external button
+- [ ] Install the system at home
 
 # Make it yourself
 
@@ -26,6 +27,10 @@ pkg install vlc
 pkg install git
 
 git clone https://github.com/JoaoPauloAntunes/wifi-alarm.git
+```
+
+## Configure the API
+```bash
 cd wifi-alarm/api
 pip install --upgrade pip
 pip install -r requirements.txt
@@ -47,3 +52,23 @@ Then, run the API:
 ```bash
 python src/run.py
 ```
+
+## Configure the ESP32 microcontroller
+
+Install the esptool program:
+```bash
+pip install esptool
+```
+
+Use the esptool to erase ESP32 flash card:
+```bash
+esptool --port <port_name> erase_flash
+```
+
+Use the esptool to flashing micropython firmware on ESP32
+```bash
+esptool --chip esp32 --port <serial_port> write_flash -z 0x1000 <esp32-X.bin>
+```
+
+Download the VSCode program; install Pymakr, a VScode pluggin; use them to program on the ESP32.
+You will need to copy the files from folder "esp32" to the ESP32 flash card.
