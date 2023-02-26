@@ -82,4 +82,4 @@ nano config.py
 
 ### Configure the ESP32 circuit
 
-<img align="right" src="https://github.com/JoaoPauloAntunes/wifi-alarm/blob/master/esp32/docs/eletronic_circuit.jpg" width="300"/>
+<img src="https://github.com/JoaoPauloAntunes/wifi-alarm/blob/master/esp32/docs/eletronic_circuit.jpg" />
