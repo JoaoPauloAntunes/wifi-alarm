@@ -7,6 +7,8 @@
     - [x] test: install it on "Smartphone Velho"   
 - [x] Call the endpoint from another device in the same network
 - [ ] Make the API Client: ESP32 + button without retention
+    - [x] Make it with ESP32 internal button
+    - [ ] Make it with external button
 
 # Make it yourself
 
