@@ -23,7 +23,7 @@
 ```bash
 pkg upgrade
 pkg install python
-pkg install vlc
+pkg install mpv
 pkg install git
 
 git clone https://github.com/JoaoPauloAntunes/wifi-alarm.git
