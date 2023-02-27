@@ -23,10 +23,20 @@
 ```bash
 pkg upgrade
 pkg install python
-pkg install mpv
 pkg install git
 
 git clone https://github.com/JoaoPauloAntunes/wifi-alarm.git
+```
+### Install mpv or vlc
+
+mpv:
+```bash
+pkg install mpv
+```
+
+vlc:
+```bash
+pkg install vlc
 ```
 
 ## Configure the API
