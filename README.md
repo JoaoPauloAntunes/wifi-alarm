@@ -9,7 +9,7 @@
 - [x] Make the API Client: ESP32 + button without retention
     - [x] Make it with ESP32 internal button
     - [x] Make it with external button
-- [ ] Install the system at home
+- [x] Install the system at home
 
 # Make it yourself
 
