@@ -11,7 +11,8 @@ while True:
     second = button.value()
     if first and not second:
         print('Button pressed!')
-
+        
+        # request the alarm ring
         print('Requesting the alarm ring...')
         base_url = "http://192.168.1.246:8000" # PC
         base_url = "http://192.168.1.240:8000" # Smartphone Novo
