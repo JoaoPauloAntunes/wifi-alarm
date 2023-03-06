@@ -101,4 +101,3 @@ def play_alarm():
         player.wait_for_playback()
     else:
         os.system(f"mpv {alarm_file_path}")
-    return True
